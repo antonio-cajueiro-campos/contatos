@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Minha Agenda</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="css/estilos.css">
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	
+<div class="row">
+	<div class="col s12  blue lighten-1 white-text center"><h4>Minha Agenda</h4></div>
+</div>
+
+<ul id="tabs-swipe-demo" class="tabs center">
+	<li class="tab col s3"><a class="active" href="#add">Adicionar</a></li>
+	<li class="tab col s3"><a href="#up">Atualizar</a></li>
+	<li class="tab col s3"><a href="#find">Procurar</a></li>
+</ul>
+
+<div class="row" id="add">
+	<div class="col s4 offset-s4">
+	 	<div style="max-width: 500px;min-width:300px;position:relative;left:50%;transform:translate(-50%);" class="card">
+			<div class="row">
+				<div class="input-field col s12">
+					<label for="addNome">Nome</label>
+					<input required id="addNome" type="text">
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<label for="addTelefone">Telefone</label>
+					<input required id="addTelefone" type="text">
+				</div>
+			</div>			
+			<div class="row">
+				<div class="col s12">
+					<a href="#!" class="btn blue lighten-1 right" id="btn-add">Adicionar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="row" id="up">
+	<div class="col s4 offset-s4">
+	 	<div style="min-width:300px;position: relative;left: 50%;transform: translate(-50%);" class="card">
+			<div class="row">
+				<div class="input-field col s12">
+					<input required placeholder="Digite o ID do contato a ser atualizado" id="upId" type="text">
+				</div>
+			</div>	 		
+			<div class="row">
+				<div class="input-field col s12">
+					<input required placeholder="Nome" id="upNome" type="text">
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<input required placeholder="Telefone" id="upTelefone" type="text">
+				</div>
+			</div>			
+			<div class="row">
+				<div class="col s12">
+					<a href="#!" class="btn blue lighten-1 right" id="btn-up">Atualizar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="row" id="find">
+	<div class="col s4 offset-s4">
+	 	<div style="min-width:300px;position: relative;left: 50%;transform: translate(-50%);" class="card">
+			<div class="row">
+				<div class="input-field col s12">
+					<input required placeholder="Nome" id="findNome" type="text">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12">
+					<a href="#!" class="btn blue lighten-1" id="btn-find">Procurar</a>
+					<a href="#!" class="btn blue lighten-1 right" id="btn-show-all">Mostrar todos</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col s8 offset-s2">
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nome</th>
+					<th>Telefone</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr id="0">
+					<td>0</td>
+					<td class="nome">Antonio</td>
+					<td>(14) 99893-1209</td>
+					<td><a href="#!" class="edit red-text"><i class="material-icons">edit</i></a></td>
+					<td><a href="#!" class="del red-text" id="0"><i class="material-icons">delete</i></a></td>
+				</tr>		
+			</tbody>
+		</table>		
+	</div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/checar.js"></script>
+
+</body>
+</html>
